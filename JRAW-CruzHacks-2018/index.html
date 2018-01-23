@@ -1,14 +1,60 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
-<html>
+<html ng-app="myApp" ng-controller="myCtrl">
+  <head>
+    <title>Need2Go</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Itim" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="PinUser.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5YZHiXCCPhqSuJfBMQcyhvtcOvJE6qGQ&callback=initMap" async
+          defer></script>
+  </head>
 
-<head>
-</head>
+  <body>
+    <div id='title'>
+  	<h1>🚽Need2Go🚽<h1>
+    <h2>A bathroom review site prototype</h2>
+    </div>
 
-<body>
-  <h1>
-  Hello, World, This is JRAW-CruzHacks-2018 space!
-  </h1>
-</body>
-
+    <center> <div id="map"> </div> </center>
+		<div id="form">
+		<table>
+		<tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>
+		<tr><td>Rating:</td> <td><select id='rating'> +
+					<option value='1' SELECTED>1-Terrible</option>
+					<option value='2'>2-Fair</option>
+					<option value='3'>3-Good</option>
+					<option value='4'>4-Very Good</option>
+					<option value='5'>5-Excellent</option>
+					</select> </td></tr>
+					<tr><td></td><td><input type='button' value='Save' onclick='saveData()'/></td></tr>
+		</table>
+    <div id="message">Location saved</div>
+  </div>
+		
+    <script> function initMap(); </script>
+    <center>
+      <!-----  Replace Submit button with Submit tap  ------>
+      <button type="button" id="pinButton" class="btn btn-primary">Update Your Location!</button>
+      <button type="button" id="youButton" class="btn btn-info">Drop a Pin at your location!</button>
+      <button type="button" id="randButton" class="btn btn-info">Drop a Pin at a random location!</button>
+      <script> document.getElementById("pinButton").addEventListener("click", initMap); </script>
+      <script> document.getElementById("randButton").addEventListener("click", dropRandMarker) </script>
+      <script> document.getElementById("youButton").addEventListener("click", dropMarkerAtLocation) </script>
+      <div id="infoBox">
+          <ul>
+              <li id="bathroom_name">{{name}}</li>
+              <li>Rating: {{rating}}</li>
+          </ul>
+      </div>
+        
+    </center>
+    <div id='footer'>
+      <p>Made with 💩 by Richard Mao, William Lee, Jake Runyan, and Justin Tse</p>
+      <p>Cruzhacks 2018</p>
+      <a href="https://github.com/runyanjake/JRAW-CruzHacks-2018">Github</a>
+    </div>
+  </body>
 </html>
