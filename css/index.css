@@ -23,7 +23,7 @@ div.page-bottom {
 
 div.parallax {
     /* The image used */
-    background-image: url("data/vball-loqual.png");
+    /* background-image: url("data/vball-loqual.png"); */
 
     /* Set a specific height */
     height: 100%; 
