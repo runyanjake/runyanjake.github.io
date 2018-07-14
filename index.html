@@ -14,6 +14,7 @@
     <!-- CSS Reference-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/stupid.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Other References (font, etc) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Sets width and scale for the current device -->
@@ -28,18 +29,41 @@
   <!-- Body -->
   <body>
 
-    <!-- Background Landing Page image -->
-    <div class="landingimage">
-        <img src="data/rollinghills.jpg">
+    <!-- nothing element so the scrolling element is based at the top -->
+    <img style="display:none;" src="data/rollinghills.jpg" alt="">
+
+    <!-- Include links -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="link w3-bar-item w3-button" href="">HOME</a>
+            <a class="link w3-bar-item w3-button w3-hide-small" href="#about">
+                <i class="fa fa-user"></i> ABOUT ME</a>
+            <a class="link w3-bar-item w3-button w3-hide-small" href="#portfolio">
+                <i class="fa fa-th"></i> PROJECTS</a>
+            </a>
+            <a class="link w3-bar-item w3-button w3-hide-small" href="https://github.com/runyanjake?tab=repositories">
+                <i class="fa fa-github-square"></i></a>
+            </a>
+            <a class="link w3-bar-item w3-button w3-hide-small" href="https://www.instagram.com/runyanjake/">
+                <i class="fa fa-instagram"></i></a>
+            </a>
+            <a class="link w3-bar-item w3-button w3-hide-small" href="https://www.linkedin.com/in/runyanjake/">
+                <i class="fa fa-linkedin"></i></a>
+            </a>
+        </div>
     </div>
 
-    <!-- Parallax Item -->
-    
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="w3-left w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HEREs ONE OF THEM PARALLAXES, UPDATED</span>
-            </div>
+    <!-- Parallax Sliding Background -->
+    <div class="landingimage w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-left w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jake Runyan</span>
         </div>
+    </div>
+
+    <!-- Sliding text 1 (About me) -->
+    <div style="width:100%;" class="aboutme">
+            <!-- <img src="data/rollinghills.jpg"> -->
+    </div>
 
     <!-- Header -->
     <div>

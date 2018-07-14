@@ -3,7 +3,12 @@
  * @author Jake Runyan
  * @desc The CSS portion of / for the website.
  *//*************************************************/
- 
+
+ /* Allow 100% for parallax slider */
+/* body, html {
+    height: 100%;
+} */
+
 div.page-background {
     background-color: red;
     width:100px;
@@ -21,20 +26,25 @@ div.page-bottom {
     background-color: blue;
 }
 
-div.parallax {
-    /* The image used */
-    /* background-image: url("data/vball-loqual.png"); */
-
-    /* Set a specific height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
+.landingimage {
+    background-image: url('../data/rollinghills.jpg');
+    /* min-height: 100%; */
+    min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.landingimage {
-    height: 100%;
+div.aboutme {
+    background-color: aquamarine;
+    height: 400px;
+}
+
+a.hover {
+    color: hotpink;
+}
+
+a.link { 
+    padding-left: 2%;
 }
