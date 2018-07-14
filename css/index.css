@@ -20,3 +20,17 @@ div.page-secondary {
 div.page-bottom {
     background-color: blue;
 }
+
+div.parallax {
+    /* The image used */
+    background-image: url("data/vball-loqual.png");
+
+    /* Set a specific height */
+    width: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
