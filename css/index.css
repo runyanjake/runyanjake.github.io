@@ -4,3 +4,19 @@
  * @desc The CSS portion of / for the website.
  *//*************************************************/
  
+div.page-background {
+    background-color: red;
+    width:100px;
+} 
+div.page-header {
+    background-color: orange;
+}
+div.page-main {
+    background-color: yellow;
+}
+div.page-secondary {
+    background-color: green;
+}
+div.page-bottom {
+    background-color: blue;
+}
