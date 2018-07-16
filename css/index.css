@@ -26,9 +26,9 @@ div.page-bottom {
     background-color: blue;
 }
 
-.landingimage {
+.image1 {
     background-image: url('../data/trees.jpg');
-    /* min-height: 100%; */
+    /* height: inherit; */
     min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
@@ -36,9 +36,46 @@ div.page-bottom {
     background-size: cover;
 }
 
+.image2 {
+    background-image: url('../data/rollinghills.jpg');
+    /* height: inherit; */
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div.aboutme {
+    height: inherit;
+    width: inherit;
     background-color: aquamarine;
-    height: 400px;
+    height: 600px;
+}
+
+div.myphoto { 
+    height: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    background-color: cyan;
+}
+
+div.mybio {
+    height: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    background-color: brown;
+}
+
+div.blog {
+    background-color: rgb(127, 255, 144);
+    height: 4000px;
 }
 
 a.hover {
