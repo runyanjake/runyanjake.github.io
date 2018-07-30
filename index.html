@@ -63,14 +63,27 @@
     </div>
 
     <!-- Sliding text 1 (About me) -->
-    <div style="width:100%;" class="aboutme container" id="about">
-        <div class="myphoto left quarter">
-            <img src="data/jake.jpg" style="width: 100%; height: auto;">
-        </div>
-        <div class="mybio right twothirds">
-            hi
-        </div>
-    </div>
+    <div class="w3-black" id="tour">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+              <h2 class="w3-wide w3-center">ABOUT ME</h2>
+
+              <div class="w3-row-padding w3-padding-32 w3-light-grey w3-round-large" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                  <img src="data/jake.jpg" style="width:100%" class="w3-hover-opacity w3-round-large">
+                </div>
+                <div class="w3-twothird w3-margin-bottom">
+                  <div class="w3-container w3-white w3-round-large">
+                    <p>Hi! I'm Jake, a lover of code, technology, and the outdoors. I have a Bachelors of Science in Computer Science from the University of California, Santa Cruz. I graduated in the spring of 2018, completing my degree in 3 years. </p>
+                    <p>I love to hear about new technologies, and enjoy working on projects that have a quantifiable impact on the world. Check out my Github link below to see what I'm working on currently, or find me through social media or my email if you'd like to get in contact with me. </p>
+                    <button class="w3-round-large w3-button w3-black w3-margin-bottom fa fa-github" onclick=" window.open('github.com/runyanjake');"></button>
+                    <button class="w3-round-large w3-button w3-black w3-margin-bottom fa fa-linkedin" onclick=" window.open('linkedin.com/runyanjake');"></button>
+                    <button class="w3-round-large w3-button w3-black w3-margin-bottom" onclick=" window.open('mailto:runyanjake@gmail.com');">Contact Me</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
     <!-- Parallax Sliding Background (Secondary sliding image) -->
     <div class="image2 w3-display-container w3-opacity-min" id="home">
@@ -78,10 +91,40 @@
         </div>
     </div>
 
-    <!-- Sliding text 1 (About me) -->
-    <div style="width:100%;" class="blog">
-            <!-- <img src="data/rollinghills.jpg"> -->
-    </div>
+    <!-- Sliding text 1 (Other Webpage Links) -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">OTHER THINGS</h2>
+            <p class="w3-opacity w3-center"><i>Here are some other things I'm up to!</i></p><br>
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                <p><b>My Current Projects</b></p>
+                <p>On this page is a blog of my current projects, along with links to view any open-source code.</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="window.open('projects.html')">View More</button>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                <p><b>Photography</b></p>
+                <p>I'm learning how to use a camera. See how my skills have improved (or deteriorated) over time!</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="window.open('photography.html')">View More</button>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                <p><b>Coming Soon</b></p>
+                <p>There's really not much behind here, but maybe one day there will be! Stay tuned for more.</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="window.open('404.html')">View More</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
 
   </body>
 
